@@ -4,20 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        double num1 = RecebeValor();
-        double num2 = RecebeValor();
-
-        Soma(num1, num2);   
-        Subtracao(num1, num2);
-        Divisao(num1, num2);
+        RecebeValor();
     }
 
-    static double RecebeValor()
+    static void RecebeValor()
     {
-        Console.WriteLine("Digite um valor");
-        double num = double.Parse(Console.ReadLine());
+        Console.WriteLine("Digite o primeiro valor");
+        double num1 = double.Parse(Console.ReadLine());
 
-        return num;
+        Console.WriteLine("Digite o segundo valor");
+        double num2 = double.Parse(Console.ReadLine());
+
+        Soma(num1, num2);
+        Subtracao(num1, num2);
+        Divisao(num1, num2);
     }
 
     static void Soma(double num1, double num2)
